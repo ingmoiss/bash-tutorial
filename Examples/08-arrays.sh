@@ -4,9 +4,6 @@
 # OF=./BackUp/back_up_$(date +%Y-%m-%d).zip
 # zip -r $OF ./Examples/*
 
-# bash trap command
-trap bashtrap INT
-
 #Declare array with 4 elements
 ARRAY=( 'Debian Linux' 'Redhat Linux' Ubuntu Linux )
 
