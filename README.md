@@ -8,3 +8,11 @@ Run `./hello_world.sh`
 
 **- Create local variable with:**
 `local`
+
+**- Bash Comparations**
+| -lt  |  <  |
+| -gt  |  >  |
+| -le  |  <= |
+| -ge  | >=  |
+| -eq  |  == |
+|  -ne |  != |
