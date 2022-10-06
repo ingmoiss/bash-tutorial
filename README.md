@@ -10,9 +10,22 @@ Run `./hello_world.sh`
 `local`
 
 **- Bash Comparations**
-| -lt  |  <  |
-| -gt  |  >  |
-| -le  |  <= |
+|  Bash | Operator  |
+| :------------: | :------------: |
+| -lt  | <  |
+| -gt  | >  |
+| -le  | <=  |
 | -ge  | >=  |
 | -eq  |  == |
-|  -ne |  != |
+| -ne  |  != |
+
+**- String Comparisons**
+
+|  Bash | Operator  |
+| :------------: | :------------: |
+| =  | equal  |
+| !=  | not equal  |
+| <  | less then  |
+| >  | greater then  |
+| -n s1  |  string s1 is not empty |
+| -z s1  |  string s1 is empty |

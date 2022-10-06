@@ -4,40 +4,27 @@
 # OF=./BackUp/back_up_$(date +%Y-%m-%d).zip
 # zip -r $OF ./Examples/*
 
-# Declare variable choice and assign value 4
-choice=4
-# Print to stdout
- echo "1. Bash"
- echo "2. Scripting"
- echo "3. Tutorial"
- echo -n "Please choose a word [1,2 or 3]? "
-# Loop while the variable choice is equal 4
-# bash while loop
-while [ $choice -eq 4 ]; do
- 
-# read user input
-read choice
-# bash nested if/else
-if [ $choice -eq 1 ] ; then
- 
-        echo "You have chosen word: Bash"
+#We’ve created the streamdata1 and streamdata2 files
+# echo -e "Create streamdata1\n"
+# cat > ./TXT-Files/streamdata1.txt
 
-else                   
+# echo -e "\nCreate streamdata2\n"
+# cat > ./TXT-Files/streamdata2.txt
 
-        if [ $choice -eq 2 ] ; then
-                 echo "You have chosen word: Scripting"
-        else
-         
-                if [ $choice -eq 3 ] ; then
-                        echo "You have chosen word: Tutorial"
-                else
-                        echo "Please make a choice between 1-3 !"
-                        echo "1. Bash"
-                        echo "2. Scripting"
-                        echo "3. Tutorial"
-                        echo -n "Please choose a word [1,2 or 3]? "
-                        choice=4
-                fi   
-        fi
-fi
-done
+# # #Redirecting Input
+# wc -l < ./TXT-Files/streamdata1.txt
+
+# # #Redirecting Output
+# cat ./TXT-Files/streamdata1.txt > ./TXT-Files/streamdata2.txt
+
+# # #Appending to an Existing File
+# cat ./TXT-Files/streamdata1.txt >> ./TXT-Files/streamdata2.txt
+
+# # #Piping Output to Input
+# cat ./TXT-Files/streamdata2.txt | wc -l
+
+# #Redirecting Error
+# exec doesnotexist.sh > ./Logs/out.log 2>./Logs/err.log
+
+#Merging Output and Error
+cat ./TXT-Files/streamdata2.txt doesnotexist.sh 2>&1>./Logs/out.log
